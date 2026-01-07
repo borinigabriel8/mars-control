@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MARS COMMAND TERMINAL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+
+	<div class="screen">
+		<header class="header">
+			<span>MARS_CONTROL v1.0</span>
+			<span class="status online">ONLINE</span>
+		</header>
+
+		<main class="terminal">
+			<div id="output">
+				<div>BOOTING SYSTEM...</div>
+				<div>INITIALIZING CORE MODULES...</div>
+				<div>ESTABLISHING DEEP SPACE LINK...</div>
+				<div class="ok">CONNECTION ESTABLISHED</div>
+				<div>TYPE <span class="cmd">HELP</span> TO LIST COMMANDS</div>
+				<br>
+			</div>
+
+			<div class="input-line">
+				<span class="prompt">&gt;</span>
+				<input type="text" id="commandInput" autocomplete="off" autofocus>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<span>DSN: ACTIVE</span>
+			<span>SECURITY LEVEL: 3</span>
+			<span>UPLINK STABLE</span>
+		</footer>
+	</div>
+
+</body>
+
+</html>
